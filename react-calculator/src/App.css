@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calculator {
+  width: 50%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
