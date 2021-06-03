@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 
 const Calculate = () => {
   return (
-    <h1>test</h1>
+    <div className="calc-container">
+      <div className="calculator">
+        <h1 className="title">React Calculator</h1>
+      </div>
+    </div>
   )
 }
 
