@@ -43,20 +43,27 @@
   margin: 0 1rem;
   height: 2rem;
   width: 7rem;
-  border: 1px solid black;
+  border: 3px solid #d6d6d6;
   border-radius: 10px;
-  padding: 0 0.5rem;
-  
+  padding: 0 0.5rem; 
+}
+
+.entry {
+  letter-spacing: 1px;
 }
 
 #operation, #equals-btn {
   height: 2rem;
-  width: 2rem;
-  min-width: 2rem;
-  border: 1px solid black;
+  width: 2.5rem;
+  min-width: 2.5rem;
+  border: 3px solid #d6d6d6;
   border-radius: 6px;
   font-size: 1rem;
   background-color: white;
+}
+
+#operation:focus, #operation:hover {
+  cursor: pointer;
 }
 
 #operation:focus, #equals-btn:focus, 
@@ -64,7 +71,11 @@
 outline: none;
 }
 
+#equals-btn {
+  background-color: #d6d6d6;
+}
+
 #equals-btn:hover, #equals-btn:focus {
   cursor: pointer;
-  background-color: #d6d6d6;
+  background-color: #eeee;
 }
