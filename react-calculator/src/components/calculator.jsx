@@ -14,7 +14,7 @@ const Calculate = () => {
             <option id="division">÷</option>
           </select>
           <input type="text" className="entry" />
-          <button>=</button>
+          <button id="equals-btn">=</button>
           <input type="text" className="display" />
         </form>
       </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 
 .calculator {
@@ -17,11 +19,15 @@
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  background-color: magenta;
+  min-width: 500px;
+  /* background-color: magenta; */
 }
 
 .title {
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .input-container {
@@ -29,5 +35,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+  /* background-color: yellow; */
+}
+
+.entry, .display {
+  margin: 0 1rem;
+  height: 2rem;
+  width: 6rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#operation, #equals-btn {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
 }
