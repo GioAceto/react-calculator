@@ -19,7 +19,7 @@
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  min-width: 500px;
+  min-width: 540px;
   /* background-color: magenta; */
 }
 
@@ -32,6 +32,7 @@
 
 .input-container {
   height: 6rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,16 +42,29 @@
 .entry, .display {
   margin: 0 1rem;
   height: 2rem;
-  width: 6rem;
+  width: 7rem;
   border: 1px solid black;
   border-radius: 10px;
+  padding: 0 0.5rem;
+  
 }
 
 #operation, #equals-btn {
   height: 2rem;
   width: 2rem;
+  min-width: 2rem;
   border: 1px solid black;
   border-radius: 6px;
   font-size: 1rem;
   background-color: white;
+}
+
+#operation:focus, #equals-btn:focus, 
+.entry:focus, .display:focus {
+outline: none;
+}
+
+#equals-btn:hover, #equals-btn:focus {
+  cursor: pointer;
+  background-color: #d6d6d6;
 }
