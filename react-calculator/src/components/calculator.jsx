@@ -5,10 +5,21 @@ export default () => {
   const [operation, setOperation] = useState('+')
   const [num2, setNum2] = useState('')
   const [result, setResult] = useState('')
+  const [error, setError] = useState('')
 
-  setResult('')
+  const isValid = () => !Number.isNaN(Number(num1)) && !Number.isNaN(Number(num2)) &&
+    num1 !== '' && num2 !== ''
 
   const calculate = () => {
+
+    if (!isValid()) {
+      setResult('')
+      return setError('Please provide a valid number for both operands')
+    }
+
+    setResult('')
+    setError('')
+
     switch (operation) {
       case '+':
         return setResult(Number(num1) + Number(num2))
@@ -19,7 +30,7 @@ export default () => {
       case '÷':
         return setResult(Number(num1) / Number(num2))
       default:
-        return setResult('Please provide a valid number for both operands')
+        return setError('Please provide a valid number for both operands')
     }
   }
 
@@ -42,6 +53,7 @@ export default () => {
           <input type="text" className="display" disabled value={result} />
         </form>
       </div>
+      <p className="error">{error}</p>
     </div>
   )
 }
