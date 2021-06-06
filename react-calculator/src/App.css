@@ -9,18 +9,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: cyan; */
 }
 
 .calculator {
   width: 50%;
-  height: 20rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
   min-width: 540px;
-  /* background-color: magenta; */
 }
 
 .title {
@@ -36,7 +34,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: yellow; */
 }
 
 .entry, .display {
@@ -78,4 +75,13 @@ outline: none;
 #equals-btn:hover {
   cursor: pointer;
   background-color: #eeee;
+}
+
+#error-container {
+  align-self: center;
+}
+
+.error {
+  color: red;
+  font-family: 'Roboto Condensed', sans-serif;
 }

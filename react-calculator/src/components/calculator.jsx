@@ -53,7 +53,9 @@ export default () => {
           <input type="text" className="display" disabled value={result} />
         </form>
       </div>
-      <p className="error">{error}</p>
+      <div id="error-container">
+        <p className="error">{error}</p>
+      </div>
     </div>
   )
 }
